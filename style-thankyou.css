@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: lightblue;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dissapear {
+    animation: vanish 4s forwards;
+}
+
+@keyframes vanish {
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
