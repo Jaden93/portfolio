@@ -38,6 +38,13 @@
 
 <body>
 
+
+  <div class="loader">
+      <div class="loading"></div>
+    </div>
+  </div>
+  
+
 <div class="fluid-container">
   <div class="container-nav mx-auto offset-6" onclick="dropdownContact(this)" >
     <div class="bar1"></div>
@@ -59,21 +66,21 @@
         <div class="form">
             <p>
                 <label>Nome: </label>
-                <input type="text" name="name" required/>
+                <input value='' type="text" name="name"/>
             </p>
             <p>
                 <label>Email: </label>
-                <input type="email" name="email" required//>
+                <input value='' type="email" name="email"/>
             </p>
-            <p>https://64.media.tumblr.com/tumblr_ma9n5kilwp1qc4uvwo1_400.gifv
+            <p>
                 <label>Messaggio: </label>
-                <textarea name="message" required class="color-bboard"></textarea>
+                <textarea value='' name="message"  class="color-bboard"></textarea>
             </p>
-            <p class=" text-center wipeout">
+            <p class=" customSubmit text-center wipeout">
+              <input  id="inviato"name="inviato" type="submit" value="Clicca per inviare" />
               <input type="hidden" name="_captcha" value="false">
-              <input id="inviato"name="inviato" type="submit" value="Clicca per inviare" onclick="console.log(location.href ='thanks.html')" />
+              <input type="hidden" name="_next" value="https://google.com"> 
             </p>
-            <input type="hidden" name="_next" value="https://jaden93.github.io/portfolio/" >
         </div>
       </form>
     </div>

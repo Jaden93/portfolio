@@ -132,14 +132,59 @@ let next = $('.next');
          $('.active').toggle()
         
     });
-    if (location.href.split('/').pop() == 'thanks.html') {
-        var loader = document.querySelector(".loader")
+
+
+     if (location.href.split('/').pop() == 'contact.html') {
+  let premuto = $('#inviato')[0];
+     let hasInput = $('form')
+   let loader = $('.loader')
+     let textSubmit = $('p.customSubmit')
+     textSubmit.removeClass('customSubmit')
+    loader.hide()
+    
+     let arrInput = Object.values(hasInput)[0]
+     for (i=0; i<3; i++) 
+     { 
+         if (arrInput[i].value == '') {
+             premuto.style = "pointer-events: none";
+             premuto.value = "Compila i campi per attivarmi";
+            
+
+         } 
+            
+             arrInput.addEventListener('input', updateValue);
+             function updateValue(e) {
+                 if (arrInput[0].value !== '' && arrInput[1].value !== '' && arrInput[1].value.includes('@') && arrInput[2].value !== '') {
+                     premuto.style = "pointer-events: cursor";
+                     textSubmit.addClass('customSubmit')
+                     premuto.value = "Clicca per inviare"
+                 }
+
+             }
+        
+
+
+
+     }
+    premuto.addEventListener("click", function() {
+
+       
+        loader.show()
         window.addEventListener("load", vanish) 
         function vanish() {
-            loader.classList.add("dissapear")
-        }
-    }
+            loader.addClass("dissapear")        
+        } 
+        setTimeout(function(){
+            window.location.href = 'index.html';
+         }, 3000);
 
+        })
+
+}    
+
+
+
+//Il tuo messaggio è stato spedito, a breve verrai indirizzato nella homepage
 
 
 

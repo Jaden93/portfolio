@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-
-}
 
 .loader{
     position: fixed;
@@ -11,13 +6,14 @@
     background: lightblue;
     height: 100%;
     width: 100%;
+    z-index: 10000;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .dissapear {
-    animation: vanish 4s forwards;
+    animation: vanish 2s forwards;
 }
 
 @keyframes vanish {
