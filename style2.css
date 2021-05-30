@@ -20,11 +20,11 @@
     border: 16px solid #f3f3f3; /* Light grey */
     border-top: 16px solid #3498db; /* Blue */
     border-radius: 50%;
-    width: 500px;
+    width: 400px;
     position: relative;
-    left: calc(50% - 250px);
-    top: calc(50% - 150px);
-    height: 500px;
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+    height: 400px;
     animation: spin 2s linear infinite;
   }
   
@@ -1254,7 +1254,7 @@ margin: auto;
     height: 100%;
     background-image: linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.3)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent);
     border: #2c2c2c solid 2px;
-    content: "Contact Us";
+    content: "Contattami";
     font-family: 'Permanent Marker', cursive;
     font-size: 2.2em;
     color: rgba(238, 238, 238, 0.7);
