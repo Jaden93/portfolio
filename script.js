@@ -115,7 +115,11 @@ icons.forEach(icon => {
     })
 });
 
-
+let maxwidth = window.matchMedia("(max-width: 400px)")
+if (maxwidth.matches) {
+    let rmvClass = $('div').removeClass("blackboard")
+    console.log(rmvClass)
+}
 
 // navbarElement.addEventListener('click', function() {
 // })
@@ -134,7 +138,7 @@ let next = $('.next');
     });
 
 
-     if (location.href.split('/').pop() == 'contact.html') {
+     if (location.href.split('/').pop() == 'contact.html' ) {
   let premuto = $('#inviato')[0];
      let hasInput = $('form')
    let loader = $('.loader')

@@ -1218,9 +1218,7 @@ margin: auto;
         width: 100%;
     }
     .blackboard {
-        transition: 1s;
-        width: 100%!important;
-        height: 100%!important;
+        opacity: 1;
     }
     .mobile-cv {
         display: none;
@@ -1232,51 +1230,58 @@ margin: auto;
         border-radius: 4px;
     }   
 
-.mobile-padding {
+    .mobile-padding {
     padding-bottom: 50px;
-}
-.page-control .next span{
+    }
+    .page-control .next span{
     display: none;
-}
+    }
 
-.next {
+    .next {
     display: none;
-}
+    }
 
+    .shade {
+        position: absolute;
+        top: 100px!important;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
 
-.followMe {
-    transition: 1s;
-    position: absolute;
-    bottom: 1%;
-    top: auto;
-    height: 60px;
-    left: calc(50% - 105px);
-    display: grid;
-    grid-template-columns: repeat(3, 60px);
-    grid-auto-flow: row;
-    gap: 1.2em;
-}
+    .followMe {
+        transition: 1s;
+        position: absolute;
+        bottom: 1%;
+        top: auto;
+        height: 60px;
+        left: calc(50% - 105px);
+        display: grid;
+        grid-template-columns: repeat(3, 60px);
+        grid-auto-flow: row;
+        gap: 1.2em;
+    }
 
-.followMeWork {
-    transition: 1s;
-    position: absolute;
-    top: auto;
-    width: auto;
-    height: 100px;
-    left: calc(50% - 105px);
-    display: grid;
-    grid-template-columns: repeat(3, 60px);
-    grid-auto-flow: row;
-    gap: 1.2em;
-    padding-bottom: 20px;
-}
+    .followMeWork {
+        transition: 1s;
+        position: absolute;
+        top: auto;
+        width: auto;
+        height: 100px;
+        left: calc(50% - 105px);
+        display: grid;
+        grid-template-columns: repeat(3, 60px);
+        grid-auto-flow: row;
+        gap: 1.2em;
+        padding-bottom: 20px;
+    }
 
-.output {
-    display: none;
-} 
-.outer {
-    display: none;
-}
+    .output {
+        display: none;
+    } 
+    .outer {
+        display: none;
+    }
 
 
 }
@@ -1325,7 +1330,9 @@ margin: auto;
 }
 
 .form {
-    padding: 0px 20px 20px;
+   
+    padding: 70px 20px 20px;
+    padding-bottom: 40px;
 }
 
 p {
