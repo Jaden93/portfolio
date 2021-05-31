@@ -118,7 +118,7 @@ icons.forEach(icon => {
 let maxwidth = window.matchMedia("(max-width: 400px)")
 if (maxwidth.matches) {
     let rmvClass = $('div').removeClass("blackboard")
-    console.log(rmvClass)
+
 }
 
 // navbarElement.addEventListener('click', function() {

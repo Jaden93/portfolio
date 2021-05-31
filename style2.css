@@ -1260,6 +1260,7 @@ margin: auto;
         grid-template-columns: repeat(3, 60px);
         grid-auto-flow: row;
         gap: 1.2em;
+        display: none;
     }
 
     .followMeWork {
@@ -1296,8 +1297,9 @@ margin: auto;
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: linear-gradient( 150deg, rgba(0, 0, 0, 0.65), transparent);
-}
+    background-image: linear-gradient( 
+150deg
+, rgba(0, 0, 0, 0.65), #0e0e0ed4);}
 
 .blackboard {
     position: relative;
@@ -1320,6 +1322,21 @@ margin: auto;
     width: 100%;
     height: 100%;
     background-image: linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.3)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent);
+    /* border: #2c2c2c solid 2px; */
+    content: "Contattami";
+    font-family: var(--main-text);
+    font-size: 2.2em;
+    color: rgba(238, 238, 238, 0.7);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contactme:before {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     /* border: #2c2c2c solid 2px; */
     content: "Contattami";
     font-family: var(--main-text);
