@@ -1202,6 +1202,18 @@ margin: auto;
 
 @media (max-width: 1024px) {
  
+    .loading {
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 200px;
+        position: relative;
+        left: calc(50% - 100px);
+        top: calc(50% -100px);
+        height: 200px;
+        animation: spin 2s linear infinite;
+      }
+
     #inviato {
         white-space: inherit;
     }    
@@ -1284,7 +1296,11 @@ margin: auto;
         display: none;
     }
 
+    .form {
+   
+        padding: 0;
 
+    }
 }
 
 
