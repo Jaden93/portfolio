@@ -69,13 +69,13 @@ function modal() {
                     removeHref
                     newTitle.text('Per contattarmi via e-mail!');
                     $('a#modal-body')[0].setAttribute("href", "mailto: geiden93@gmail.com");
-                    newBody.text("Cliccami o Entra per essere inoltrato all'invio dell'email")
+                    newBody.text("Cliccami per essere inoltrato all'invio dell'email")
                 }
                 else if (el == 3) {
                     removeHref                    
                     newTitle.text('Visita il mio profilo Github e i miei lavori!');
                     $('a#modal-body')[0].setAttribute("href","https://github.com/Jaden93/");
-                    newBody.text('Cliccami o Entra per visitare il mio profilo Github')
+                    newBody.text('Cliccami per visitare il mio profilo Github!')
 
                 }
             })

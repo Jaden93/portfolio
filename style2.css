@@ -1040,8 +1040,29 @@ span.active {
 	
 /* end arrow */
 
+/* card */
+
+
+.mobile-card {
+    width: 75%;
+}
+
+/* follow me */
 
 .followMe {
+    position: absolute;
+    top: 35%;
+    left: 5px;
+    height: 400px;
+    width: 150px;
+    display: grid;
+    grid-template-columns: 60px;
+    grid-template-rows: repeat(3, 60px);
+    grid-auto-flow: row;
+    gap: 1.2em;
+
+}
+.followMeWork {
     position: absolute;
     top: 35%;
     left: 5px;
@@ -1179,6 +1200,30 @@ margin: auto;
 
 @media (max-width: 1024px) {
  
+    #inviato {
+        white-space: inherit;
+    }    
+
+    #mobile-menu2 {
+        height: auto;
+    }
+    
+    #mobile-menu {
+        height: auto;
+    }
+    
+    .mobile-card {
+        width: 100%;
+    }
+    .blackboard {
+        transition: 1s;
+        width: 100%!important;
+        height: 80%!important;
+    }
+    .mobile-cv {
+        display: none;
+    }
+
     #mobile-space .img-bg , #mobile-space .img-bg1,#mobile-space .img-bg2, #mobile-space .img-bg3 {
         margin-bottom: 14px;
         border: 5px rgb(97, 97, 97) solid;
@@ -1196,16 +1241,32 @@ margin: auto;
     display: none;
 }
 
+
 .followMe {
+    transition: 1s;
     position: absolute;
-    bottom: 0;
-    height: 0;
-    width: 0;
+    bottom: 1%;
+    top: auto;
+    height: 60px;
+    left: calc(50% - 105px);
     display: grid;
-    grid-template-columns: 60px;
-    grid-template-rows: repeat(3, 60px);
+    grid-template-columns: repeat(3, 60px);
     grid-auto-flow: row;
     gap: 1.2em;
+}
+
+.followMeWork {
+    transition: 1s;
+    position: absolute;
+    top: auto;
+    width: auto;
+    height: 100px;
+    left: calc(50% - 105px);
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-auto-flow: row;
+    gap: 1.2em;
+    padding-bottom: 20px;
 }
 
 .output {
@@ -1234,7 +1295,6 @@ margin: auto;
 .blackboard {
     position: relative;
     width: 540px;
-    margin: 7% auto;
     height: 50%;
     top: calc(50% - 250px);
     border: tan solid 12px;
@@ -1253,9 +1313,9 @@ margin: auto;
     width: 100%;
     height: 100%;
     background-image: linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.3)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent);
-    border: #2c2c2c solid 2px;
+    /* border: #2c2c2c solid 2px; */
     content: "Contattami";
-    font-family: 'Permanent Marker', cursive;
+    font-family: var(--main-text);
     font-size: 2.2em;
     color: rgba(238, 238, 238, 0.7);
     text-align: center;

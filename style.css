@@ -755,6 +755,23 @@ span.active {
 }
 @media (max-width: 1024px) {
 
+    .mobile-cv {
+        display: none;
+    }
+
+    header .logo1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 16px;
+        transform: translate(-50%, -50%);    
+        font-weight: 600;
+        transition: 0.6s;
+        text-decoration: none;
+        z-index: 1;
+    }
+    
+
     .page-control .next span{
         display: none;
     }
