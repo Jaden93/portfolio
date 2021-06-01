@@ -5,7 +5,9 @@
 
 
 /* HEADER START */
-
+.custom-dropdown-nav {
+    padding-left: 0;
+}
 .loader{
     position: fixed;
     z-index: 1000;

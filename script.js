@@ -194,8 +194,8 @@ let next = $('.next');
 
 
 // drag for home 
-let a = $('.home')
 if(location.href.split('/').pop() == 'index2.html' || 'contact.html') {
+    let a = $('.home')
     $('.home').draggable({
     
         containment: 'parent',
